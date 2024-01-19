@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+:root {
+    --primary-color: #363538;
+    --secondary-color: #8D8C8A;
+    --accent1-color: #408697;
+    --accent2-color: #CF8B64;
+
+    --heading-font: "lato", sans-serif;
+    --paragraph-font: "lato", sans-serif;
+
+    --nav-background-color: #408697;
+    --nav-link-color: #3A3634;
+    --nav-hover-link-color: #ffffff;
+    --nav-hover-background-color: #363538;
+}
+body {
+    font-family: var(--paragraph-font);
+    max-width: 960px;
+    padding: 20px;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+}
+header {
+    padding: 20px;
+    background-color: var(--accent1-color);
+}
+p {
+    padding: 25px;
+}
+nav {
+    background-color: var(--nav-background-color);
+    font-size: 1.2rem;
+    display: flex;
+}
+nav a {
+    display: block;
+    color: var(--nav-hover-link-color);
+    text-decoration: none;
+    padding: 1rem;
+}
+nav a:link, nav a :visited {
+    color: var(--nav-hover-link-color);
+}
+nav a:hover {
+    color: var(--nav-hover-link-color);
+    background-color: var(--nav-hover-background-color);
+}
