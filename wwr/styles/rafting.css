@@ -27,6 +27,7 @@ body {
     font-family: var(--paragraph-font);
     max-width: 800px;
     padding: 20px;
+    margin:0 auto;
 }
 h1, h2, h3, h4, h5, h6 {
     font-family: var(--heading-font);
@@ -58,32 +59,44 @@ main {
 .hero {
     position:relative;
     margin-top: 10px;
-
+    
 }
 
-.hero img {
+.hero > img {
+    display: block;
     width: 100%;
-    height: 100%;
-    
+    height: auto;
     
 }
  
 article {
     position: absolute;
-    background: rgb(161, 215, 233, 0.6);
-    width: 100%;
-}
-article img{
     float: right;
-	padding: 3px;
-	width: 25px;
-	height: auto;
-}
-
-article p{
     margin: 0;
+    right: 21%;
+    width: 55%;
+    height: 45%;
+    background: rgb(161, 215, 233, 0.6);
+    border: 1px solid rgb(0, 0, 0, 0);
+    top: 57px;
 
 }
+
+article img {
+    float: right;
+    width: 25%;
+    margin: 0.6rem;
+    margin-left: auto;
+
+}
+
+article p {
+    margin-top: -3px;
+    text-align: left;
+    ;
+}
+
+
 h1 {
     position: absolute;
     width: 100%;
