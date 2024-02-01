@@ -56,7 +56,6 @@ p {
 }
 
 main {
-    display: block;
     grid-column: 2;
     margin-right: 1rem;
 }
