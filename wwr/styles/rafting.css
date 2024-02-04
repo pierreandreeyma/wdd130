@@ -15,10 +15,25 @@
     --nav-hover-background-color: #363538;
 }
 
+/* Add css grid to enhance the layout 1-Feb-24 */
+
 header {
-    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    align-items: center;
+    max-width: 940px;
     background-color: var(--accent1-color);
+
 }
+
+header img {
+    margin: 0 1rem 0 3rem;
+    padding: 2px;
+    width: 100px;
+    height: auto;
+    
+}
+
 p {
     padding: 25px;
 }
@@ -33,32 +48,45 @@ h1, h2, h3, h4, h5, h6 {
     font-family: var(--heading-font);
     color: var(--primary-color);
 }
+
 nav {
-    background-color: var(--nav-background-color);
-    font-size: 1.2rem;
+    width: 100%;
+    font-size: 1.2rem;  
     display: flex;
+    justify-content: space-evenly;
+    
 }
+
 nav a {
+    width: 25%;
     display: block;
     color: var(--nav-hover-link-color);
     text-decoration: none;
-    padding: 1rem;
+    font-weight: 700;
+    padding: 5px;
+    text-align: center;
+
 }
+
+
 nav a:link, nav a :visited {
     color: var(--nav-hover-link-color);
 }
 nav a:hover {
     color: var(--nav-hover-link-color);
     background-color: var(--nav-hover-background-color);
+    transition: .6s;
 }
+
 
 main {
     max-width: 840px;
+    display: grid;
 }
 
 .hero {
     position:relative;
-    margin-top: 10px;
+    margin: 10px auto;
     
 }
 
@@ -66,33 +94,37 @@ main {
     display: block;
     width: 100%;
     height: auto;
-    
+    margin-bottom: 5px;
+    text-align: center;
 }
  
 article {
     position: absolute;
-    float: right;
-    margin: 0;
-    right: 21%;
-    width: 55%;
+    margin: 0 auto;
+    right: 11%;
+    width: 75%;
     height: 45%;
-    background: rgb(161, 215, 233, 0.6);
+    background: rgba(7, 38, 49, 0.6);
     border: 1px solid rgb(0, 0, 0, 0);
     top: 57px;
-
+    overflow: hidden;
 }
 
 article img {
     float: right;
-    width: 25%;
-    margin: 0.6rem;
-    margin-left: auto;
+    width: 20%;
+    margin: 0.3rem 5%;
+    box-shadow: 0 0 30px gray;
+    border: 2px solid #ffffff;
 
 }
 
 article p {
-    margin-top: -3px;
+    margin: -10px auto;
+    
     text-align: left;
+    font-style: italic;
+    color: #ffffff;
     
 }
 
@@ -101,9 +133,99 @@ h1 {
     position: absolute;
     width: 100%;
     text-align: center;
-    background: rgba(236, 110, 38, 0.6) ;
+    background: rgba(236, 110, 38, 0.6);
     margin-top: 0;
     top: 15px;
-    color: #ffffff;
+    color: #ffffff;   
+}
+
+.history {
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-gap: 3px; /* Adjust as needed */
+    margin-bottom: 10px;
+    padding: 5px;
+    background-color: rgba(236, 110, 38, 0.1);
+
+  }
+  
+ 
+.history img {
+    grid-area: 1 / 2;
+    width: 90%;
+    margin: 2.5rem 2px 2px 2px;
+    left: 10px;
+    padding: 5px;
+    border: 4px solid rgba(236, 110, 38, 0.6);
+    box-shadow: 0 0 30px gray;
+
+}
+.history p {
+    grid-row: 1;
+    padding: 10px;
+    margin-top: 25px;
+    font-size: .875rem;
+}
+.history h2 {
+    grid-column: 2;
+    grid-row: 1;
+    text-align: center;
+    margin-top: 0.3rem;
+    font-size: 1.7rem;
+}
+.advencontainer {
+    margin: 4px;
+    padding: 5px;
+    justify-content: center;
+    text-align: center;
+    background: rgba(236, 110, 38, 0.6);
+}
+.advencontainer h2 {
+    margin: 0 auto;
     
 }
+
+.gallery {
+    display: flex;
+    font-size: x-small;
+    font-style: italic; 
+}
+div.gallery img {
+    width: 100%;
+    margin: 0 auto;
+    border: 3px solid #ffffff;
+    
+  }
+
+.set-image {
+    margin: 0 auto;
+    padding: 13px;
+    width: 100%;
+    transition: transform .4s;
+  }
+  .set-image:hover {
+    transform: scale(1.1);
+  }
+
+footer {
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    text-align: center;
+    margin-top: 10px;
+    background-color: var(--accent1-color);
+    color: #ffffff;
+    font-size: .995rem;
+}
+
+.sociallinks {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    margin-right: 2px;
+}
+.sociallinks a:hover {
+    background-color: rgba(0,0,0,0.0);
+    transition: transform .2s;
+    transform: scale(1.5);
+}
+
