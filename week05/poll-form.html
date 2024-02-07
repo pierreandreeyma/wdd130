@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pierre Andre Eyma | WDD 130</title>
+    <meta name="description" content="rhythm and Rafting form - Week 05">
+    <meta name="author" content="Pierre Andre Eyma">
+</head>
+<body>
+    <header>
+        <h1>WDD 130 | HTML Form - User Poll</h1>
+    </header>
+    <main>
+        <form>
+            <fieldset>
+                <legend>Contact Information</legend>
+                <label>Full Name: <input type="text" id="fullname" name="fullname"><br></label>
+                <label>Email: <input type="email" id="useremail" name="useremail"><br></label>
+            </fieldset>
+            <fieldset>
+                <legend>Questions</legend>
+                <label for="browser">What is your favorite browser: </label>
+                <select id="browser" name="browser">
+                    <option value="" selected disabled>--Choose an option--</option>
+                    <option value="chrome">Chrome</option>
+                    <option value="firefox">Firefox</option>
+                    <option value="safari">Safari</option>
+                    <option value="edge">Edge</option>
+                    <option value="Brave">Brave</option>
+                    <option value="other">Other</option>
+                </select><br>
+                
+                    <label for="pet">Do you have a household pet?:</label> 
+                    <input type="checkbox" id="pet" name="pet"><br>
+                    <label for="feedback">List the places you have lived:</label>
+                    <textarea id="feedback" name="feedback" rows="4" placeholder="Stillwater Florida, Amsterdam Netherlands, Tibuktu Mali, Port-au-Prince Haiti"></textarea> 
+                
+            </fieldset>
+            <button type="submit">Submit Poll</button>
+        </form>
+
+    </main>
+    <footer>
+        &copy; Winter 2024 | HTML Form-User Poll Activity |
+        Pierre Andre Eyma | BYU_Idaho
+    </footer>
+</body>
+</html>
