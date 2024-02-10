@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pierre Andre Eyma | WDD 130</title>
+    <link rel="stylesheet" href="/week05/styles/poll-form.css"> 
     <meta name="description" content="rhythm and Rafting form - Week 05">
     <meta name="author" content="Pierre Andre Eyma">
 </head>
@@ -20,7 +21,7 @@
             </fieldset>
             <fieldset>
                 <legend>Questions</legend>
-                <label for="browser">What is your favorite browser: </label>
+                <label for="browser">What is your favorite browser: 
                 <select id="browser" name="browser">
                     <option value="" selected disabled>--Choose an option--</option>
                     <option value="chrome">Chrome</option>
@@ -29,17 +30,14 @@
                     <option value="edge">Edge</option>
                     <option value="Brave">Brave</option>
                     <option value="other">Other</option>
-                </select><br>
-                
-                    <label for="pet">Do you have a household pet?:</label> 
-                    <input type="checkbox" id="pet" name="pet"><br>
-                    <label for="feedback">List the places you have lived:</label>
-                    <textarea id="feedback" name="feedback" rows="4" placeholder="Stillwater Florida, Amsterdam Netherlands, Tibuktu Mali, Port-au-Prince Haiti"></textarea> 
-                
+                </select></label>
+                    <label for="pet">Do you have a household pet?
+                    <input type="checkbox" id="pet" name="pet"></label> 
+                    <label for="feedback">List the places you have lived</label>
+                    <textarea id="feedback" name="feedback" rows="4" placeholder="Stillwater Florida, Amsterdam Netherlands, Tibuktu Mali, Port-au-Prince Haiti"></textarea>   
             </fieldset>
             <button type="submit">Submit Poll</button>
         </form>
-
     </main>
     <footer>
         &copy; Winter 2024 | HTML Form-User Poll Activity |
