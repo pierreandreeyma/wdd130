@@ -6,7 +6,7 @@
     <title>Rhythm And Rafting Contact Us</title>
     <meta name="description" content="The contact page for Rhythm And Rafting website">
     <meta name="author" content="Pierre Andre Eyma">
-    <link rel="stylesheet" href="styles/contact.css">
+    <link rel="stylesheet" href="styles/rafting.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
@@ -33,6 +33,7 @@
         <div class="contact">
             <h2>Contact Us</h2>
             <p>If you have questions or would like more information, please fill the following form and we'll be sure to get back to you ASAP. Thanks, and we look forward to hearing from you!</p>
+            <img src="images/bassinblue.jpg" alt="bassinblue-haiti">
           </div>
         <section class="contactform">
             <div class="form">
@@ -41,6 +42,7 @@
                         <legend>Contact Information</legend>
                         <label>Your Name: <input type="text" id="yourname" name="yourname"><br></label>
                         <label>Your Email: <input type="email" id="useremail" name="useremail"><br></label>
+                        
                         <label>Phone Number: <input type="tel" id="phone" name="phone" placeholder="000-000-0000" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required></label>
                         <label for="country" class="country">Country of Origine:</label> 
                         <select id="country" name="country">
@@ -156,8 +158,21 @@
                             <option value="Yemen">Yemen</option>
                             <option value="Zambia">Zambia</option>
                             <option value="Zimbabwe">Zimbabwe</option>
-                        </select><br>
-                            <label> Message:<textarea id="feedback" name="feedback" rows="4"></textarea></label>
+                        </select>
+                        <label for="age">Are you 18?
+                          <input type="checkbox" id="age" name="age">Yes</label>
+                        <div class="activity">
+                            <h4>Your favorite activity:</h4>
+                            <input type="radio" id="rafting" name="activity" value="act1">
+                            <label for="rafting">Rafting/River</label>
+                            <input type="radio" id="mountain" name="activity" value="act2">
+                            <label for="mountain">Mountaineering</label>
+                            <input type="radio" id="kayaking" name="activity" value="act3">
+                            <label for="kayaking">Se Kayaking</label>
+                        </div>
+                           
+                          
+                            <label for="feedback"> Message:</label><textarea id="feedback" name="message" rows="4"></textarea>
                     </fieldset>
                     <button type="submit">Submit</button>
                 </form>
