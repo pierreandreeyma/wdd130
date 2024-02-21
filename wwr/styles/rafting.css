@@ -5,10 +5,8 @@
     --secondary-color: #8D8C8A;
     --accent1-color: #408697;
     --accent2-color: #CF8B64;
-
     --heading-font: "lato", sans-serif;
     --paragraph-font: "lato", sans-serif;
-
     --nav-background-color: #408697;
     --nav-link-color: #3A3634;
     --nav-hover-link-color: #ffffff;
@@ -16,7 +14,6 @@
 }
 
 /* Add css grid to enhance the layout 1-Feb-24 */
-
 header {
     display: grid;
     grid-template-columns: 1fr 3fr;
@@ -25,19 +22,16 @@ header {
     background-color: var(--accent1-color);
 
 }
-
 header img {
     margin: 0 1rem 0 3rem;
     padding: 2px;
     width: 100px;
     height: auto;
-    
 }
 
 p {
     padding: 25px;
 }
-
 body {
     font-family: var(--paragraph-font);
     max-width: 800px;
@@ -48,27 +42,21 @@ h1, h2, h3, h4, h5, h6 {
     font-family: var(--heading-font);
     color: var(--primary-color);
 }
-
 nav {
     width: 100%;
     font-size: 1.2rem;  
     display: flex;
-    justify-content: space-evenly;
-    
+    justify-content: space-evenly;  
 }
-
 nav a {
     width: 25%;
     display: block;
     color: var(--nav-hover-link-color);
     text-decoration: none;
     font-weight: 700;
-    padding: 5px;
+    padding: 20px;
     text-align: center;
-
 }
-
-
 nav a:link, nav a :visited {
     color: var(--nav-hover-link-color);
 }
@@ -77,19 +65,14 @@ nav a:hover {
     background-color: var(--nav-hover-background-color);
     transition: .6s;
 }
-
-
 main {
     max-width: 840px;
     display: grid;
 }
-
 .hero {
     position:relative;
-    margin: 10px auto;
-    
+    margin: 10px auto;  
 }
-
 .hero > img {
     display: block;
     width: 100%;
@@ -97,7 +80,135 @@ main {
     margin-bottom: 5px;
     text-align: center;
 }
- 
+
+/* Rhythm and rafting home page css */
+.goalnsignup {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    padding: 5px;
+    align-content: space-between;
+  }
+.goalnsignup > label {
+    padding-top: 0.5rem;
+}
+.newsletter {
+    max-height: 53%;
+    padding: 15px;
+    margin-bottom: 2px;
+    background-color: rgba(26, 11, 3, 0.1);
+    box-shadow: 0 0 30px gray;
+}
+.newsletter p, h2 {
+    padding: 2px;
+}
+.newsletter h2 {
+    background-color: var(--primary-color);
+    padding-left: 5px;
+    color: white;
+    margin: 3px;  
+} 
+.sitegoal {
+    display: grid;
+    margin-right: 20px;
+}
+.para {
+    background-color: var(--primary-color);
+    width: 100%;
+    grid-row: 1 / 2;
+    padding: 6px;
+    margin-bottom: 10px;
+}
+.para > h2 {
+    color: white;
+    margin: 5px;   
+} 
+.para > p {
+    padding: 5px;
+    margin: 5px;
+    color: white;
+}
+.homeimg {
+    width: 100%;
+    background-color: #CF8B64;
+    border: 6px solid var(--accent1-color);  
+}
+.imglegend {
+    text-align: center; 
+    color: #fff;  
+}
+.imglegend > p {
+    margin: 3px;
+    padding: 3px;
+    font-weight: 700;
+}
+.explorer {
+    display: block;
+    background-color: var(--accent1-color);
+    width: 80%;
+    transition: transform .2s;
+    margin-top: 10px;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    font-size: 1.1rem;   
+}
+.explorer:hover {
+    -ms-transform: scale(1.1); /* IE 9 */
+    -webkit-transform: scale(1.1); /* Safari 3-8 */
+    transform: scale(1.1); 
+    box-shadow: 0 0 30px gray;
+}
+.cta {
+    grid-column: 2;
+    grid-row: 2;
+    height: 130px;
+    margin-top: -190px;
+    margin-bottom: 10px;
+    padding: 3px;
+    padding-top: 5px;
+    background-color: rgba(248, 87, 0, 0.252);
+    box-shadow: 0 0 30px gray;
+}
+.cta p {
+    margin: 0 auto;
+    padding: 2px;
+    text-align: center;
+}
+.subscribebuttuon {
+    display: block;
+    background-color: var(--accent1-color);
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 15px;
+    color: #fff;
+    border: none;
+    border-radius: 0.5rem;
+    padding: 0.3rem;
+    font-size: 1.2rem;
+}
+.toknow {
+    grid-column: 1;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    padding: 3px;
+    background-color: rgba(26, 11, 3, 0.1);
+}
+.toknow h3 {
+    margin: 5px;
+    padding: 5px;
+}
+.toknow > p {
+    margin: 5px;
+    padding: 5px;
+}
+.toknowimg {
+    grid-area: 2 / 2;
+    text-align: center;
+    margin-top: 10px;
+}
+.toknowimg img {
+    width: 80%;
+    border: 6px solid var(--accent1-color)
+}
 article {
     position: absolute;
     margin: 0 auto;
@@ -116,19 +227,14 @@ article img {
     margin: 0.3rem 5%;
     box-shadow: 0 0 30px gray;
     border: 2px solid #ffffff;
-
 }
 
 article p {
     margin: -10px auto;
-    
     text-align: left;
     font-style: italic;
     color: #ffffff;
-    
 }
-
-
 h1 {
     position: absolute;
     width: 100%;
@@ -138,7 +244,6 @@ h1 {
     top: 15px;
     color: #ffffff;   
 }
-
 .history {
     display: grid;
     grid-template-rows: auto auto;
@@ -146,8 +251,7 @@ h1 {
     margin-bottom: 10px;
     padding: 5px;
     background-color: rgba(236, 110, 38, 0.1);
-
-  }
+}
   
  
 .history img {
@@ -158,7 +262,6 @@ h1 {
     padding: 5px;
     border: 4px solid rgba(236, 110, 38, 0.6);
     box-shadow: 0 0 30px gray;
-
 }
 .history p {
     grid-row: 1;
@@ -184,7 +287,6 @@ h1 {
     margin: 0 auto;
     
 }
-
 .gallery {
     display: flex;
     font-size: x-small;
@@ -193,21 +295,19 @@ h1 {
 div.gallery img {
     width: 100%;
     margin: 0 auto;
-    border: 3px solid #ffffff;
-    
-  }
-
+    border: 3px solid #ffffff; 
+}
 .set-image {
     margin: 0 auto;
     padding: 13px;
     width: 100%;
     transition: transform .4s;
-  }
+}
   .set-image:hover {
     transform: scale(1.1);
-  }
+}
 
-
+/* webpage footer */
 footer {
     display: grid;
     grid-template-columns: 4fr 1fr;
@@ -217,7 +317,6 @@ footer {
     color: #ffffff;
     font-size: .995rem;
 }
-
 .sociallinks {
     display: flex;
     justify-content: end;
@@ -246,8 +345,7 @@ footer {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     padding: 5px;
-    margin: 5px;
-    
+    margin: 5px;   
 }
 .our-team {
     padding: 30px 0 40px;
@@ -256,21 +354,18 @@ footer {
     background-color: var(--accent2-color);
     text-align: center;
     overflow: hidden;
-    position: relative;
-    
+    position: relative;   
   }
   
-  .our-team .picture {
+.our-team .picture {
     display: inline-block;
     height: 130px;
     width: 130px;
     margin-bottom: 50px;
     z-index: 1;
-    position: relative;
-    
-  }
-  
-  .our-team .picture::before {
+    position: relative;  
+} 
+.our-team .picture::before {
     content: "";
     width: 100%;
     height: 0;
@@ -283,13 +378,12 @@ footer {
     opacity: 0.9;
     transform: scale(3);
     transition: all 0.3s linear 0s;
-  }
-  
-  .our-team:hover .picture::before {
+} 
+.our-team:hover .picture::before {
     height: 100%;
-  }
+}
   
-  .our-team .picture::after {
+.our-team .picture::after {
     content: "";
     width: 100%;
     height: 100%;
@@ -299,32 +393,29 @@ footer {
     top: 0;
     left: 0;
     z-index: -1;
-  }
-  
-  .our-team .picture img {
+} 
+.our-team .picture img {
     width: 100%;
     height: auto;
     border-radius: 50%;
     transform: scale(1);
     transition: all 0.9s ease 0s;
-  }
-  
-  .our-team:hover .picture img {
+}
+.our-team:hover .picture img {
     box-shadow: 0 0 0 14px #f7f5ec;
     transform: scale(0.7);
-  }
-  .team-content .name {
+}
+.team-content .name {
     color: black;
     margin: 3px;
-  }
-  .our-team .title {
+}
+.our-team .title {
     display: block;
     font-size: 15px;
     color: var(--primary-color);
     text-transform: capitalize;
-  }
-  
-  .our-team .social {
+}
+.our-team .social {
     width: 100%;
     padding: 0;
     margin: 0;
@@ -333,39 +424,34 @@ footer {
     bottom: -100px;
     left: 0;
     transition: all 0.5s ease 0s;
-  }
-  
-  .our-team:hover .social {
+}
+.our-team:hover .social {
     bottom: 0;
-    
-  }
-  
-  .our-team .social li {
+}
+.our-team .social li {
     display: inline-block;
-  }
-  
-  .our-team .social li a {
+}
+.our-team .social li a {
     display: block;
     padding: 10px;
     font-size: 17px;
     color: white;
     transition: all 0.3s ease 0s;
     text-decoration: none;
-  }
+}
   
-  .our-team .social li a:hover {
+.our-team .social li a:hover {
     color: var(--accent1-color);
     background-color: #f7f5ec;
-    
-  }
+}
 
   /* form css style */
-  .contactform {
+.contactform {
     width: 800px;
     background-color: rgba(225, 222, 222, 0.1);
     margin: 0 auto;
     margin-bottom: 1px;
-  }
+}
 .contact img {
     display: grid;
     grid-column: 2 / span 3;
@@ -376,7 +462,7 @@ footer {
     border: 4px solid var(--accent2-color);
     box-shadow: 0 0 30px gray;
 }
-  form {
+.formcontact {
     width: 650px;
     margin: 0 auto;
     margin-top: 20px;
@@ -410,9 +496,7 @@ input, select, textarea {
     padding: 0.25rem;
     font-size: 0.9rem;
 }
-
-.activity {
-    
+.activity {  
     margin-bottom: 10px;
 }
 .activity h4 {
@@ -423,14 +507,14 @@ textarea {
     width: 400px;
 }
 .country {
-    margin-top: 10px;
-    
+    margin-top: 10px; 
 }
 select {
     width: fit-content;
 }
 
 button {
+    display: block;
     margin: 1rem;
     background-color: var(--accent1-color);
     width: 70%;
@@ -439,7 +523,7 @@ button {
     border: none;
     border-radius: .5rem;
     padding: .75rem;
-    font-size: 1.2rem;
+    font-size: 1.2rem;   
 }
 button:hover {
     background-color: rgba(161, 74, 23, 0.8); 
@@ -451,25 +535,22 @@ button:hover {
     margin: auto;
     padding: 10px;
     background-color: rgba(236, 110, 38, 0.1);
-  }
+}
 .contact h2 {
     margin: 5px 15px;
     padding-left: 15px;
-
 }
 .contact p {
     margin: 4px;
     padding-top: 5px;
     grid-row: 2;
 }
-
 .raftingcontact {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
     background: rgba(236, 110, 38, 0.6);
-    margin-bottom: 20px;
-    
+    margin-bottom: 20px;    
 }
 .infocontact {
     grid-column: 1;
@@ -488,9 +569,7 @@ button:hover {
 }
 .gmap {
     grid-column: 2;
-    margin: 15px;
-    
-    
+    margin: 15px; 
 }
 .gmap iframe {
     width: 90%;
@@ -499,3 +578,203 @@ button:hover {
     border: 3px solid #408697;
     box-shadow: 0 0 30px gray;
 }
+
+/* Trips / adventures css */
+/* slideshow carousel style*/
+.adventures {
+    background-color: rgba(236, 110, 38, 0.1);
+    padding: 15px;
+    margin-bottom: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.trippurpose {
+    grid-column: 1 / 2 span;
+    grid-row: 1;
+    margin: 10px;
+    padding: 10px;
+    background-color: var(--primary-color);
+    border: 5px solid white;
+}
+.trippurpose > h2 {
+    text-decoration: underline;
+    margin: 2px;
+    padding: 0;
+    color: #fff;
+}
+.trippurpose > p {
+    margin: 2px;
+    padding: 0;
+    color: #fff;
+}
+.actionbutton {
+    grid-column: 2;
+    grid-row: 1;
+    margin-top: 130px;
+    margin-left: 85px;
+    margin-bottom: 0;
+    transition: transform .2s;
+}
+.actionbutton:hover {
+    -ms-transform: scale(1.1); /* IE 9 */
+    -webkit-transform: scale(1.1); /* Safari 3-8 */
+    transform: scale(1.1); 
+}
+/*slide in overlay from bottom*/
+.threetripphotos {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-bottom: 20px;
+    padding: 10px; 
+}
+.tripphotocontainer {
+    position: relative;
+    margin: 0 auto;
+    margin: 5px;
+    border: 5px solid #037E8C;
+    box-shadow: 0 0 30px gray;
+}
+.tripphotocontainer2 {
+    position: relative;
+    margin: 0 auto;
+    margin: 5px;
+    border: 5px solid #037E8C;
+    box-shadow: 0 0 30px gray;
+}
+.tripphotocontainer3 {
+    position: relative;
+    margin: 0 auto;
+    margin: 5px;
+    border: 5px solid #037E8C;
+    box-shadow: 0 0 30px gray;
+    }
+.tripimage {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(236, 110, 38, 0.9);
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: .5s ease;
+}
+.tripphotocontainer:hover .overlay {
+    height: 20%;
+}
+.tripphotocontainer2:hover .overlay {
+    height: 20%;
+}
+.tripphotocontainer3:hover .overlay {
+    height: 20%;
+}
+.photodescription {
+    color: white;
+    font-size: 15px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+  
+/*packages table */
+.packages {
+    background-color: rgba(236, 110, 38, 0.1);
+    width: 700px;
+    margin: 0 auto;
+    padding: 15px;
+    margin-bottom: 10px;
+}
+.triptable {
+    text-align: center;
+    margin: 10px;
+}
+.triptable > h2 {
+    text-decoration: underline;
+}
+#slideshow {
+    grid-column: 3;
+    overflow: hidden;
+    height: 170px;
+    width: 242px;
+    margin: 0 auto;
+    border: 5px solid #408697;
+    box-shadow: 0 0 30px gray;
+  }
+.slide-wrapper {
+    width: 2912px;
+    -webkit-animation: slide 10s ease infinite;
+}
+.slide {
+    float: left;
+    height: 170px;
+    width: 242px;
+}
+.slide:nth-child(1) {
+    background: #D93B65;
+}
+.slide:nth-child(2) {
+    background: #037E8C;
+}
+.slide:nth-child(3) {
+    background: #36BF66;
+}
+.slide:nth-child(4) {
+    background: #D9D055;
+}
+.slide:nth-child(5) {
+    background: #D9D055;
+}
+.slide:nth-child(6) {
+    background: #D9D055;
+}
+
+@-webkit-keyframes slide {
+    20% {margin-left: 0px;}
+    30% {margin-left: -243px;}
+    50% {margin-left: -243px;}
+    60% {margin-left: -485px;}
+    70% {margin-left: -485px;}
+    80% {margin-left: -728px;}
+    90% {margin-left: -728px;}
+}
+
+  /* Trips adventures packages table style*/
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 80%;
+    margin: 0 auto;
+    box-shadow: 0 0 30px gray;
+}
+td, th {
+    border: 1px solid #96D4D4;
+    text-align: left;
+    padding: 8px;
+}
+th {
+  background-color: rgba(236, 110, 38, 0.7);
+  text-align: center;
+  border: 2px solid white;
+  border-style: outset;
+} 
+  tr:nth-child(even) {
+    background-color: #96D4D4;
+}
+#tripwireframe {
+    position: absolute;
+    float: left;
+    text-decoration: none;
+    color: white;
+    font-style: oblique;
+    font-size: small;
+    margin: 15px 5px 5px 15px;   
+} 
